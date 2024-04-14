@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     xiaomi_pine_overlay_lineage \
     xiaomi_olive_overlay_lineage
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
