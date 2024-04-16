@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_Mi439.mk \
-    $(LOCAL_DIR)/evolution_Mi439_4_19.mk
+    $(LOCAL_DIR)/everest_Mi439.mk \
+    $(LOCAL_DIR)/everest_Mi439_4_19.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_Mi439-user \
-    evolution_Mi439-userdebug \
-    evolution_Mi439-eng \
-    evolution_Mi439_4_19-user \
-    evolution_Mi439_4_19-userdebug \
-    evolution_Mi439_4_19-eng
+    everest_Mi439-user \
+    everest_Mi439-userdebug \
+    everest_Mi439-eng \
+    everest_Mi439_4_19-user \
+    everest_Mi439_4_19-userdebug \
+    everest_Mi439_4_19-eng
