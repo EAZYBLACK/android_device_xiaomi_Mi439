@@ -120,7 +120,7 @@ $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
 
 #HELP
 #ifneq ($(WITH_GMS),true)
-BOARD_ODMIMAGE_PARTITION_RESERVED_SIZE := 41933040  # 40MB reserve for odm because its basically empty lmao
+BOARD_ODMIMAGE_PARTITION_RESERVED_SIZE := 16777216 # 16MB reserve for odm because its basically empty lmao
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
