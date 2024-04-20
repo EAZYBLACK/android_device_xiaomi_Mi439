@@ -117,7 +117,7 @@ $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 209715200)) # 200 MB
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 367001600)) # 40 MB
+    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 367001600)) # 350 MB
 
 #HELP
 #ifneq ($(WITH_GMS),true)
