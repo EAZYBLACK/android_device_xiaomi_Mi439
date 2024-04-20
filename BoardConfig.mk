@@ -28,8 +28,9 @@ endif
 
 # Partitions
 SSI_PARTITIONS := product system system_ext
-TREBLE_PARTITIONS := odm vendor
-ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
+TREBLE_PARTITIONS := vendor
+EXTRA_PARTITION := odm
+ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS) $(EXTRA_PARTITION)
 
 $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
@@ -116,7 +117,7 @@ $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 209715200)) # 200 MB
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 41943040)) # 40 MB
+    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 367001600)) # 40 MB
 
 #HELP
 #ifneq ($(WITH_GMS),true)
